@@ -1,0 +1,219 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ItensActivity" >
+
+    <RadioGroup
+        android:id="@+id/situacao_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/desuso_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="desuso" />
+
+        <RadioButton
+            android:id="@+id/uso_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="uso" />
+
+        <RadioButton
+            android:id="@+id/ocioso_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ocioso" />
+    </RadioGroup>
+
+    <ImageButton
+        android:id="@+id/monitor_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/situacao_button"
+        android:src="@drawable/monitor1" />
+
+    <ImageButton
+        android:id="@+id/gabinete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/monitor_button"
+        android:layout_below="@+id/monitor_button"
+        android:src="@drawable/gabinete" />
+
+    <ImageButton
+        android:id="@+id/estabilizador_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/situacao_button"
+        android:layout_toRightOf="@+id/monitor_button"
+        android:src="@drawable/estabilizador" />
+
+    <ImageButton
+        android:id="@+id/impressora_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/situacao_button"
+        android:layout_toRightOf="@+id/estabilizador_button"
+        android:src="@drawable/printer1" />
+
+    <ImageButton
+        android:id="@+id/telefone_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/situacao_button"
+        android:layout_toRightOf="@+id/impressora_button"
+        android:src="@drawable/telefone" />
+
+    <ImageButton
+        android:id="@+id/fax_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/impressora_button"
+        android:layout_toRightOf="@+id/impressora_button"
+        android:src="@drawable/fax" />
+
+    <ImageButton
+        android:id="@+id/scanner_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/estabilizador_button"
+        android:layout_toRightOf="@+id/estabilizador_button"
+        android:src="@drawable/scanner" />
+
+    <ImageButton
+        android:id="@+id/nobreak_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/gabinete_button"
+        android:layout_toRightOf="@+id/gabinete_button"
+        android:src="@drawable/nobreak" />
+
+    <ImageButton
+        android:id="@+id/cadeira_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gabinete_button"
+        android:layout_toLeftOf="@+id/nobreak_button"
+        android:src="@drawable/cadeira" />
+
+    <ImageButton
+        android:id="@+id/mesa_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/cadeira_button"
+        android:layout_toLeftOf="@+id/scanner_button"
+        android:src="@drawable/mesa" />
+
+    <ImageButton
+        android:id="@+id/gaveteiro_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sofa_button"
+        android:layout_alignLeft="@+id/fax_button"
+        android:src="@drawable/gaveteiro" />
+
+    <ImageButton
+        android:id="@+id/sofa_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cadeira_button"
+        android:layout_below="@+id/cadeira_button"
+        android:src="@drawable/sofa2lugares" />
+
+    <ImageButton
+        android:id="@+id/estante_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/livro_button"
+        android:layout_alignLeft="@+id/gaveteiro_button"
+        android:src="@drawable/estante" />
+
+    <ImageButton
+        android:id="@+id/armario_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mesa_button"
+        android:layout_toRightOf="@+id/mesa_button"
+        android:src="@drawable/armario" />
+
+    <ImageButton
+        android:id="@+id/livro_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sofa_button"
+        android:layout_toLeftOf="@+id/mesa_button"
+        android:src="@drawable/livro" />
+
+    <ImageButton
+        android:id="@+id/quadro_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/livro_button"
+        android:layout_toLeftOf="@+id/armario_button"
+        android:src="@drawable/quadro" />
+
+    <ImageButton
+        android:id="@+id/mesaapoio_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/armario_button"
+        android:layout_toRightOf="@+id/mesa_button"
+        android:src="@drawable/mesaapoio" />
+
+    <ImageButton
+        android:id="@+id/outrostexto_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/quadro_button"
+        android:layout_toRightOf="@+id/armario_button"
+        android:src="@drawable/seta" />
+
+    <ImageButton
+        android:id="@+id/microondas_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/quadro_button"
+        android:layout_toRightOf="@+id/quadro_button"
+        android:src="@drawable/microondas" />
+
+    <ImageButton
+        android:id="@+id/estacaotrabalho_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/sofa_button"
+        android:layout_toRightOf="@+id/sofa_button"
+        android:src="@drawable/estacaotrabalho" />
+
+    <TextView
+        android:id="@+id/tombotela_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/livro_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/livro_button"
+        android:text="Tombo:" />
+
+    <TextView
+        android:id="@+id/tombotelavalor_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/outrostexto_button"
+        android:layout_toRightOf="@+id/livro_button"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

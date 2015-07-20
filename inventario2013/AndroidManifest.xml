@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.fagner.trf5.inventario2013"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.dm.zbar.android.scanner.ZBarScannerActivity"
+        android:screenOrientation="landscape"
+        android:label="@string/app_name" />
+
+        <activity
+            android:name="net.fagner.trf5.inventario2013.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="net.fagner.trf5.inventario2013.ItensActivity"
+            android:label="@string/title_activity_itens"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.fagner.trf5.inventario2013.DetalheActivity"
+            android:label="@string/title_activity_detalhe"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.fagner.trf5.inventario2013.TecladoActivity"
+            android:label="@string/title_activity_teclado"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.fagner.trf5.inventario2013.OutrosActivity"
+            android:label="@string/title_activity_outros"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.fagner.trf5.inventario2013.SetorActivity"
+            android:label="@string/title_activity_setor" >
+        </activity>
+    </application>
+
+</manifest>

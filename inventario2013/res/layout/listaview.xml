@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/datahora_listaview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tombo_listaview"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="27dp"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/descricao_listaview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tombo_listaview"
+        android:layout_toLeftOf="@+id/setor_listview"
+        android:layout_toRightOf="@+id/icone_listaview"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ImageView
+        android:id="@+id/icone_listaview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/gabinete" />
+
+    <TextView
+        android:id="@+id/tombo_listaview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/icone_listaview"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/sala_listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/datahora_listaview"
+        android:layout_alignRight="@+id/datahora_listaview"
+        android:layout_below="@+id/datahora_listaview"
+        android:text="sala"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/setor_listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/descricao_listaview"
+        android:layout_alignBottom="@+id/descricao_listaview"
+        android:layout_alignLeft="@+id/situacao_textview"
+        android:layout_toLeftOf="@+id/sala_listview"
+        android:text="setor"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/situacao_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tombo_listaview"
+        android:layout_alignBottom="@+id/tombo_listaview"
+        android:layout_marginLeft="28dp"
+        android:layout_toRightOf="@+id/tombo_listaview"
+        android:text="00"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>
